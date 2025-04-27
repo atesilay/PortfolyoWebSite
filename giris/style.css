@@ -77,8 +77,9 @@ section {
 }
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--snd-bg-color);
+    color: var(--mrb-color);
     cursor: pointer;
+    display: none; /* önce ekranı daraltıyoruz */
 }
 
 
@@ -259,45 +260,107 @@ span {
 .contact {
    background: var(--bg-color);
   }
-  .contact h2{
-    margin-bottom: 2.5rem;
-    color: black;
-
-  } 
-  
-.contact form {
-    max-width:90rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 4rem;
-  
+  .contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   
-  .contact form .input-box {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content:center;
-
+  .contact .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
-
-  .contact form .input-box,
-  .contact form textarea {
+  
+  .contact .input-box input {
+    flex: 1 1 48%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+  
+  .contact textarea {
     width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    border-radius: 0.8rem;
-    border: 0.25rem solid var(--main-color);
-    background: var(--bg-color);
-    margin: 0.7rem 0;
-    resize:none;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    resize: none;
+    margin-bottom: 1rem;
   }
-  .contact form .input-box input {
-    width: 49;
-    margin: 0.7rem 0.35rem;
+  
+  .contact .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact .btn:hover {
+    background: #0056b3;
   }
 
- 
-/* Footer Section */
+/* Responsive */
 
+@media (max-width: 991px) {
+    #menu-icon {
+        display: block; /* ← sadece küçük ekranda görünür! */
+    }
+    .navbar {
+        position: absolute;
+        top:100%;
+        right: -100%;
+        width: 255px;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        background: var(--mrb-color);
+        transition: all 0.5 ease;
+        backdrop-filter:blur(10px);
 
-/* Responsive Design Code */
+    }
+    .navbar a{
+        display:block;
+        padding:17px;
+        font-size: 22px;
+    }
+    .navbar.active {
+        right:0;
+    }
+    .home {
+        flex-direction: column;
+
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content {
+        order:2;
+        margin-left:1rem;
+
+    }
+    .home-img img {
+        width:60vw;
+        margin-top: 4rem;
+        
+    }
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+}
