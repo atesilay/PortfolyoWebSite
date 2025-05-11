@@ -3,6 +3,7 @@
 Kişisel Portföy Web Sitesi
 
 Hakkında
+
 Bu, Frontend Developer olarak sahip olduğum beceri ve projeleri sergilemek için oluşturduğum kişisel bir portföy web sitesidir. Web sitesi, farklı cihazlarda kullanıcı deneyimini geliştirmek için tamamen duyarlı olacak şekilde tasarlanmıştır. Ana Sayfa, Hakkımda, Hizmetler, İletişim gibi bölümleri içerir. Ayrıca, kaydırma animasyonları, sosyal medya entegrasyonları ve ekran boyutlarına göre uyum sağlayan dinamik bir gezinme menüsü sunar.
 
 ![image](https://github.com/user-attachments/assets/d0086878-76f3-400c-96bc-4c75b7364a11)
