@@ -1,5 +1,7 @@
 # PortfolyoWebSite
+
 Kişisel Portföy Web Sitesi
+
 Hakkında
 Bu, Frontend Developer olarak sahip olduğum beceri ve projeleri sergilemek için oluşturduğum kişisel bir portföy web sitesidir. Web sitesi, farklı cihazlarda kullanıcı deneyimini geliştirmek için tamamen duyarlı olacak şekilde tasarlanmıştır. Ana Sayfa, Hakkımda, Hizmetler, İletişim gibi bölümleri içerir. Ayrıca, kaydırma animasyonları, sosyal medya entegrasyonları ve ekran boyutlarına göre uyum sağlayan dinamik bir gezinme menüsü sunar.
 
